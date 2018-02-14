@@ -2,8 +2,6 @@ package com.github.andreidore.fancourierclient;
 
 import java.util.Set;
 
-import com.github.jknack.handlebars.internal.Param;
-
 import net.dongliu.requests.RawResponse;
 import net.dongliu.requests.Requests;
 import net.dongliu.requests.body.Part;
@@ -29,13 +27,10 @@ public class FanCourierClient {
 		RawResponse response = Requests.get(CITY_URL).multiPartBody(Part.param("username", username),
 				Part.param("client_id", client_id), Part.param("user_pass", password)).send();
 
-		
 		System.out.println(response.getStatusCode());
-		
+
 		return null;
 
 	}
-	
-	
 
 }
