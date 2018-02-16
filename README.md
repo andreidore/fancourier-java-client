@@ -38,6 +38,6 @@ Map<String,Set<City>> cities=client.getCities();
 
 # Todo
 
-~~* GetCities~~
+* ~~GetCities~~
 * Generate awb
 * Download awb
